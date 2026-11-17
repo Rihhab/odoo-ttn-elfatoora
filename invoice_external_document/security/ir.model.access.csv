@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_invoice_ocr_config,invoice.ocr.config,model_invoice_ocr_config,account.group_account_manager,1,1,1,1
+access_invoice_ocr_import_log,invoice.ocr.import.log,model_invoice_ocr_import_log,base.group_user,1,1,1,0
+access_invoice_ocr_import_wizard,invoice.ocr.import.wizard,model_invoice_ocr_import_wizard,base.group_user,1,1,1,1

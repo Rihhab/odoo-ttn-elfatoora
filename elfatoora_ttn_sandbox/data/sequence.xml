@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="seq_elfatoora_sandbox_submission" model="ir.sequence">
+            <field name="name">Elfatoora Demo Submission</field>
+            <field name="code">elfatoora.sandbox.submission</field>
+            <field name="prefix">SIM-</field>
+            <field name="padding">8</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

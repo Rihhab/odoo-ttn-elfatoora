@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_elfatoora_config_form_idtrust" model="ir.ui.view">
+        <field name="name">digiit_model_elfatoora.config.form.idtrust</field>
+        <field name="model">digiit_model_elfatoora.config</field>
+        <field name="inherit_id" ref="elfatoora_ttn_base.view_elfatoora_config_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="ID-Trust USB" invisible="not enable_token">
+                    <group string="Local USB Middleware">
+                        <field name="idtrust_local_service_url" required="enable_token"/>
+                        <field name="idtrust_certificate_endpoint" required="enable_token"/>
+                        <field name="idtrust_sign_endpoint" required="enable_token"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

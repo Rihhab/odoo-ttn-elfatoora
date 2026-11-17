@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_elfatoora_qr"
+              inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@id='payment_term']" position="after">
+            <div id="elfatoora_invoice_qr"
+                 class="mt-3 mb-3 avoid-page-break-inside"
+                 t-if="o.digiit_elfatoora_qr_code">
+                <div class="text-center">
+                    <strong>QR Code El Fatoora</strong>
+                    <br/>
+                    <img t-att-src="o._get_qr_code_data_uri()"
+                         alt="QR Code El Fatoora"
+                         style="width: 35mm; height: 35mm; object-fit: contain;"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
